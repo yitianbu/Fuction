@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.vdian.android.wdb.functionset"
+        minSdkVersion MIN_SDK_VERSION
+        targetSdkVersion TARGET_SDK_VERSION
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile "com.android.support:recyclerview-v7:$APPCOMPAT_V7_VERSION"
+    compile "com.android.support:appcompat-v7:$APPCOMPAT_V7_VERSION"
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+}
