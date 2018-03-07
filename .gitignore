@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+build
+.idea
+.settings
+*.iml
+local.properties
+.gradle
+/captures
+reports
+gradle
+business
+modules/
+freeline
+freeline_project_description.json
